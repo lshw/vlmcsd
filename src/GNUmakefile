@@ -158,7 +158,7 @@ else
   DLL_NAME ?= ../lib/libkms.so
 endif
 
-BASECFLAGS = -DVLMCSD_COMPILER=\"$(notdir $(CC))\" -DVLMCSD_PLATFORM=\"$(TARGETPLATFORM)\" -DCONFIG=\"$(CONFIG)\" -DBUILD_TIME=$(shell date '+%s') -g -Os -fno-strict-aliasing -fomit-frame-pointer -ffunction-sections -fdata-sections
+BASECFLAGS = -DVLMCSD_COMPILER='"$(notdir $(CC))"' -DVLMCSD_PLATFORM='"$(TARGETPLATFORM)"' -DCONFIG='"$(CONFIG)"' -DBUILD_TIME=$(shell date '+%s') -g -Os -fno-strict-aliasing -fomit-frame-pointer -ffunction-sections -fdata-sections
 BASELDFLAGS = 
 STRIPFLAGS =
 CLIENTLDFLAGS =
